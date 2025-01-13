@@ -1,0 +1,148 @@
+/* RESET CSS (pour supprimer les marges et les styles par défaut) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body */
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  /* HEADER */
+  header {
+    background: linear-gradient(135deg, #00b4d8, #0077b6);
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    border-bottom: 5px solid #004e7c;
+  }
+  
+  header h1 {
+    font-size: 3em;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+  
+  /* MENU */
+  nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 20px 0;
+    list-style: none;
+    background-color: #004e7c;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background-color: #00b4d8;
+    border-radius: 5px;
+  }
+  
+  /* Sections */
+  section {
+    background-color: white;
+    margin: 20px 0;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  section h2 {
+    font-size: 2em;
+    color: #0077b6;
+  }
+  
+  section p {
+    font-size: 1.1em;
+    color: #333;
+  }
+  
+  /* Galerie */
+  #galerie {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  #galerie img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  #galerie img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #004e7c;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+  }
+  
+  footer p {
+    font-size: 1em;
+  }
+  
+  footer a {
+    color: #00b4d8;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  header, section, footer {
+    opacity: 0;
+    animation: fadeInSection 1s ease-out forwards;
+  }
+  
+  @keyframes fadeInSection {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
